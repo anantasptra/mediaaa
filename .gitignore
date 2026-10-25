@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+learning_media.db-journal
+learning_media.db-wal
+learning_media.db-shm
+.DS_Store
+Thumbs.db

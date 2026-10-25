@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Pembelajaran Interaktif Siswa SD</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Fredoka & Quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col justify-between selection:bg-amber-300 selection:text-amber-900">
+
+  <!-- App Header / Navigation Bar -->
+  <div id="app-header"></div>
+
+  <!-- App Main Content Area (Single Page Application Router) -->
+  <main id="app-main-content" class="flex-grow"></main>
+
+  <!-- Kid-friendly Footer -->
+  <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500 font-medium">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="text-xl">🌟</span>
+        <span>Media Pembelajaran Sains SD Berbasis Storyline Interaktif</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span>Karya Edukasi Digital</span>
+        <span>•</span>
+        <a href="operator.html" class="font-bold text-sky-600 hover:underline">Akses Operator / Guru</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="static/js/api-adapter.js"></script>
+  <script src="static/js/audio.js"></script>
+  <script src="static/js/components/storyline-player.js"></script>
+  <script src="static/js/components/virtual-lab.js"></script>
+  <script src="static/js/components/games.js"></script>
+  <script src="static/js/student-app.js"></script>
+</body>
+</html>
